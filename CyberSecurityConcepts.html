@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Concepts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Navigation-->
+    <header>
+        <nav>
+            <a href="#home" class="logo">Cybersecurity Concepts</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cia-triad">CIA Triad</a></li>
+                <li><a href="#data-states">Data States</a></li>
+                <li><a href="#authentication">Authentication</a></li>
+                <li><a href="#passwords">Passwords</a></li>
+                <li><a href="#phishing">Phishing</a></li>
+                <li><a href="#social-engineering">Social Engineering</a></li>
+                <li><a href="#threats">Threats</a></li>
+                <li><a href="#sources">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN CONTENT-->
+    <main>
+        <!-- Hero Section -->
+        <div class="hero" id="home">
+            <h1>Cybersecurity Concepts</h1>
+        </div>
+
+        <!--CIA TRIAD SECTION-->
+        <section id="cia-triad">
+            <h2>The CIA Triad</h2>
+            <p>The CIA triad is a way to remember the three main goals of keeping information safe.</p>
+            <div class="image-placeholder">
+                <img src="CIAtriad.png" alt="CIA Triad">
+            </div>
+            <p class="image-caption">Image Source: Logstail.com</p>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Confidentiality</h4>
+                    <p>Is the practice of protecting against unauthorized access.</p>
+                    <p><strong>Example:</strong> Alice is sending an email to Bob, and an unauthorized user sees the message and posts about it.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Integrity</h4>
+                    <p>Is the practice of protecting against unauthorized modification.</p>
+                    <p><strong>Example:</strong> Alice sends an email to Bob, and an unauthorized user alters the information in the email. Bob then gets false information.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Availability</h4>
+                    <p>The practice of protecting against denial of service.</p>
+                    <p><strong>Example:</strong> Alice tries to send Bob an email, but something is blocking the email from being sent to Bob.</p>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h4>Why the CIA Triad Matters</h4>
+                <p>The CIA Triad matters because it is like the three rules of protecting data.</p>
+            </div>
+        </section>
+
+        <!--DATA STATES SECTION-->
+        <section id="data-states">
+            <h2>The Three States of Data</h2>
+            <p>We need to know the state of data to then apply the right cybersecurity tool to protect it.</p>
+
+            <div class="image-placeholder">
+                <img src="3StatesOfData.png" alt="3 States of Data">
+            </div>
+            <p class="image-caption">Image Source: Sealpath.com</p>
+
+            <h3>1. Data at Rest</h3>
+            <div class="content-box">
+                <p><strong>Definition:</strong> Data in storage that is at rest.</p>
+                <p><strong>Examples:</strong> Files on hard drives, databases, backup tapes, cloud storage, archives, etc.</p>
+            </div>
+
+            <h3>2. Data in Transit</h3>
+            <div class="content-box">
+                <p><strong>Definition:</strong> Data actively moving from one location to another across networks or between devices.</p>
+                <p><strong>Examples:</strong> Email, file transfers, web browsing, video streaming, etc.</p>
+            </div>
+
+            <h3>3. Data in Use</h3>
+            <div class="content-box">
+                <p><strong>Definition:</strong> Data being actively used, accessed, or changed by applications or users.</p>
+                <p><strong>Examples:</strong> Data loaded in RAM, documents being edited, etc.</p>
+            </div>
+        </section>
+
+        <!--AUTHENTICATION SECTION-->
+        <section id="authentication">
+            <h2>Authentication</h2>
+            <p>Authentication is used to prove who you are so that you are given the correct access.</p>
+
+            <div class="image-placeholder">
+                <img src="Authentication.png" alt="Authentication">
+            </div>
+            <p class="image-caption">Image Source: Swoopnow.com</p>
+
+            <h3>Authentication Factors</h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Something You Know</h4>
+                    <p><strong>Examples:</strong> Passwords, PINs, etc.</p>
+                    <p><strong>Strengths:</strong> Easy to implement and easy for correct user</p>
+                    <p><strong>Weaknesses:</strong> Can be forgotten or guessed</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Something You Have</h4>
+                    <p><strong>Examples:</strong> Smart cards, mobile devices, keys, etc.</p>
+                    <p><strong>Strengths:</strong> Physical possession required</p>
+                    <p><strong>Weaknesses:</strong> Can be lost or stolen</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Something You Are</h4>
+                    <p><strong>Examples:</strong> Fingerprints, facial recognition, eye scans, voice recognition, etc.</p>
+                    <p><strong>Strengths:</strong> Unique to individual, can't be forgotten</p>
+                    <p><strong>Weaknesses:</strong> Privacy concerns, technological breakdowns or issues</p>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h4>Multi-Factor Authentication</h4>
+                <p> A Combination of two or more authentication factors increases security.</p>
+                <p><strong>Common MFA Examples:</strong></p>
+                <ul>
+                    <li>Password + SMS code</li>
+                    <li>Fingerprint + PIN</li>
+                    <li>Smart card + password</li>
+                    <li>Authenticator app + biometric</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--PASSWORDS SECTION-->
+        <section id="passwords">
+            <h2>Password Security</h2>
+            <p>A password is a combination of characters and numbers.</p>
+
+            <div class="image-placeholder">
+                <img src="Password.png" alt="Password">
+            </div>
+            <p class="image-caption">Image Source: Hostpapa.com</p>
+
+            <h3>Creating Strong Passwords</h3>
+            <div class="content-box">
+                <h4>Think of these steps while creating a password:</h4>
+                <ul>
+                    <li><span class="success">✓</span> Use at least 12-16 characters</li>
+                    <li><span class="success">✓</span> Combine uppercase, lowercase, numbers, and special characters</li>
+                    <li><span class="success">✓</span> Use unique passwords for each account</li>
+                    <li><span class="success">✓</span> Consider using passphrases</li>
+                    <li><span class="warning">✗</span> Avoid dictionary words, personal information, or common patterns</li>
+                    <li><span class="warning">✗</span> Never reuse passwords across multiple sites</li>
+                    <li><span class="warning">✗</span> Don't share passwords via email or text</li>
+                </ul>
+            </div>
+
+            <h3>Password Strength</h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Weak Password</h4>
+                    <p><strong>Example:</strong> password</p>
+                    <p>Short, predictable, easily cracked in seconds</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Moderate Password</h4>
+                    <p><strong>Example:</strong> Bryce2009!</p>
+                    <p>Contains some variety but includes personal info and common patterns</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Strong Password</h4>
+                    <p><strong>Example:</strong> kT9$mP2#vL6@qR4</p>
+                    <p>Long, random, includes multiple character types, no patterns</p>
+                </div>
+            </div>
+
+            <h3>Common Password Attacks</h3>
+            <div class="content-box">
+                <h4>Method #1</h4>
+                <ul>
+                    <li><strong>Shoulder Surfing</strong> Looking over ones shoulder to identify their password.</li>
+                    <li><strong>Keylogging:</strong> Recording keystrokes to capture passwords.</li>
+
+                <h4>Method #2</h4>
+                    <li><strong>Brute Force:</strong> Software programs that automate the process of rapidly testing all possible combinations of characters.</li>
+                    <li><strong>Uneducated Users:</strong> Guessing the password based on knowledge of the user.</li>
+                </ul>
+            </div>
+
+            <h3>What Hackers Know About Passwords</h3>
+            <div class="content-box">
+                <h4>They know:</h4>
+                <ul>
+                    <li>There is a 50% chance that there is a vowel.</li>
+                    <li>Capital letters are usually at the beginning and are followed by a vowel.</li>
+                    <li>Numbers are usually 1 or 2 and are at the start or end.</li>
+                    <li>Women usually tend to use their personal names.</li>
+                    <li>Men usually tend to use their hobbies.</li>
+                </ul>
+            
+
+        </section>
+
+        <!--PHISHING SECTION-->
+        <section id="phishing">
+            <h2>Phishing Attacks</h2>
+            <p>Phishing is one of the most successful cyberattack methods, using deception to trick individuals into revealing sensitive information or installing malware.</p>
+
+            <div class="image-placeholder">
+                <img src="Screenshot 2025-11-05 182232.png" alt="Phishing Email">
+            </div>
+            <p class="image-caption">Image Source: Cyberpilot.io</p>
+
+            <h3>What is Phishing?</h3>
+            <div class="content-box">
+                <p>Phishing is the use of bogus emails and websites to trick you into: </p>
+                <ul>
+                    <li>Revealing passwords, credit card numbers, or other sensitive data</li>
+                    <li>Clicking malicious links that install malware</li>
+                    <li>Downloading infected attachments</li>
+                    <li>Transferring money or making fraudulent payments</li>
+                </ul>
+            </div>
+
+            <h3>Types of Phishing</h3>
+                <div class="grid-item">
+                    <h4>Spear Phishing</h4>
+                    <p>An email scam targeted towards a specific individual, organization, or business.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Whaling</h4>
+                    <p>An email scam targeted at high-value individuals.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Smishing</h4>
+                    <p>Text messages are used for phishing.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Vishing</h4>
+                    <p>Phone calls or voice messages for phishing.</p>
+                </div>
+            </div>
+
+            <h3>How to Identify Phishing</h3>
+            <div class="content-box">
+                <ul>
+                    <li><span class="warning"></span> <strong>Urgent or threatening language:</strong> "Act now or lose everything!"</li>
+                    <li><span class="warning"></span> <strong>Generic greetings:</strong> "Dear Customer" instead of your name</li>
+                    <li><span class="warning"></span> <strong>Suspicious sender addresses:</strong> Slight misspellings or gramatical errors</li>
+                    <li><span class="warning"></span> <strong>Unexpected attachments:</strong> Especially .exe, .zip, or .scr files</li>
+                    <li><span class="warning"></span> <strong>Requests for sensitive information:</strong> Real companies will never ask for passwords via email</li>
+                    <li><span class="warning"></span> <strong>Mismatched URLs:</strong> Hover over links to see actual destination</li>
+                    <li><span class="warning"></span> <strong>Too good to be true offers:</strong> Prize winnings, or free gifts</li>
+                </ul>
+            </div>
+
+            <h3>Protection Strategies</h3>
+            <div class="content-box">
+                <ul>
+                    <li><span class="warning"></span> <strong>Verify before clicking:</strong> Contact the organization directly using official contact information</li>
+                    <li><span class="warning"></span> <strong>Examine URLs:</strong> Look for misspellings, extra characters, or wrong domains</li>
+                    <li><span class="warning"></span> <strong>Keep software updated:</strong> Browsers and security software can block known phishing sites</li>
+                    <li><span class="warning"></span> <strong>Report suspicious emails:</strong> Forward to IT department or report to the impersonated organization</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--SOCIAL ENGINEERING SECTION-->
+        <section id="social-engineering">
+            <h2>Social Engineering</h2>
+            <p>Social engineering is psychological manipulation used on people to perform actions or collect confidential information. It exploits human psychology rather than technical vulnerabilities.</p>
+
+            <div class="image-placeholder">
+                <img src="SE.png" alt="Social Engineering">
+            </div>
+            <p class="image-caption">Image Source: Hoxhunt.com</p>
+
+            <h3>Common Social Engineering Tactics</h3>
+            
+                <div class="grid-item">
+                    <h4>Baiting</h4>
+                    <p>Offering something enticing to lure victims into a trap. Often uses physical media or download links.</p>
+                    <p><strong>Example:</strong> USB drive labeled "Winning Lottery #s" found on the ground. Curious person plugs it in, installing malware.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Shoulder Surfing</h4>
+                    <p>Looking over someone's shoulder to see their screen, keyboard, or documents to gather information.</p>
+                    <p><strong>Example:</strong> Watching someone enter PIN at an ATM or login credentials at an ATM.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Dumpster Diving</h4>
+                    <p>Searching through trash to find information that can be used for attacks.</p>
+                    <p><strong>Example:</strong> Going behind an office building to look for crumpled papers with potential information.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Info Written in Workspace</h4>
+                    <p>Finding passwords or codes that were put up on the walls or laid on a desk. </p>
+                    <p><strong>Example:</strong> An interview goes on in an office, revealing emails and passwords of employees written on paper hung on the walls.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Piggybacking</h4>
+                    <p>Gaining physical access by following authorized personnel into restricted areas.</p>
+                    <p><strong>Example:</strong> Attacker with hands full asks employee to hold door open to secure building.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Pretexting</h4>
+                    <p>Creating a fake scenario to obtain information. Attacker poses as someone with authority or legitimate need.</p>
+                    <p><strong>Example:</strong> Caller claims to be from IT and needs your password to "fix" your computer.</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Ransomeware</h4>
+                    <p>Using fake or real messages to force users to take an action, like installing fake software or paying a ransom.</p>
+                    <p><strong>Example:</strong> Someone claiming to be a teacher at school sends a link. You click it and accidentally download ransomware onto your computer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--THREATS SECTION-->
+        <section id="threats">
+            <h2>Common Cybersecurity Threats</h2>
+            <p>Modern society faces a wide range of cybersecurity threats. Understanding these threats can help create effective defense strategies.</p>
+
+            <div class="image-placeholder">
+                <img src="Screenshot 2025-11-05 191626.png" alt="Threats">
+            </div>
+            <p class="image-caption">Image Source: Diro.io</p>
+
+            <h3>Common Threats</h3>
+            <div class="content-box">
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Viruses</h4>
+                    <p>Programs that attach to legitimate files and spread when those files are executed or shared.</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Worms</h4>
+                    <p>Programs that replicate and spread across networks without user interaction.</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Trojans</h4>
+                    <p>Malicious programs disguised as legitimate software that create backdoors for attackers.</p>
+                    <p><strong>Impact:</strong> Unauthorized access, data theft, system control</p>
+                </div>
+            
+                <div class="grid-item">
+                    <h4>DDoS Attacks</h4>
+                    <p>Distributed Denial of Service attacks overwhelm systems with traffic, making services unavailable to legitimate users.</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Man-in-the-Middle</h4>
+                    <p>Attackers intercept communications between two parties, altering data in transit.</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Supply Chain Attacks</h4>
+                    <p>Compromising software/hardware in the supply chain to affect multiple downstream targets.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--SOURCES SECTION-->
+        <section id="sources">
+            <h2>Sources and Resources</h2>
+
+            <div class="content-box">
+                <h4>Primary Educational Source</h4>
+                <ul>
+                    <li><strong>Cyber.org</strong> - Classroom materials link to:
+                        <a href="https://cyber.org" target="_blank">https://cyber.org</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-box">
+                <h4>Image Sources</h4>
+                <ul>
+                    <li>CIA Triad Diagram - Source: Logstail.com</li>
+                    <li>Data States Illustration - Source: Sealpath.com</li>
+                    <li>Authentication Methods Infographic - Source: Swoopnow.com</li>
+                    <li>Password Strength Visual - Source: Hostpapa.com</li>
+                    <li>Phishing Email Example - Source: Cyberpilot.io</li>
+                    <li>Social Engineering Techniques - Source: Hoxhunt.com</li>
+                    <li>Threat Overview - Source: Diro.io</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #888;">
+            Some textual information from:
+            <a href="https://cyber.org" target="_blank">https://cyber.org</a>
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #888;">
+            Website coded with assistance from Claude
+        </p>
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script src="script.js"></script>
+</body>
+</html>
