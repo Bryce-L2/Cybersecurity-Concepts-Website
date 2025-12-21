@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Navigation-->
     <header>
         <nav>
             <a href="#home" class="logo">Cybersecurity Concepts</a>
@@ -20,19 +19,15 @@
                 <li><a href="#phishing">Phishing</a></li>
                 <li><a href="#social-engineering">Social Engineering</a></li>
                 <li><a href="#threats">Threats</a></li>
+                <li><a href="#networking">Networking</a></li>
                 <li><a href="#sources">Sources</a></li>
             </ul>
         </nav>
     </header>
-
-    <!--MAIN CONTENT-->
     <main>
-        <!-- Hero Section -->
         <div class="hero" id="home">
             <h1>Cybersecurity Concepts</h1>
         </div>
-
-        <!--CIA TRIAD SECTION-->
         <section id="cia-triad">
             <h2>The CIA Triad</h2>
             <p>The CIA triad is a way to remember the three main goals of keeping information safe.</p>
@@ -64,8 +59,6 @@
                 <p>The CIA Triad matters because it is like the three rules of protecting data.</p>
             </div>
         </section>
-
-        <!--DATA STATES SECTION-->
         <section id="data-states">
             <h2>The Three States of Data</h2>
             <p>We need to know the state of data to then apply the right cybersecurity tool to protect it.</p>
@@ -93,8 +86,6 @@
                 <p><strong>Examples:</strong> Data loaded in RAM, documents being edited, etc.</p>
             </div>
         </section>
-
-        <!--AUTHENTICATION SECTION-->
         <section id="authentication">
             <h2>Authentication</h2>
             <p>Authentication is used to prove who you are so that you are given the correct access.</p>
@@ -138,8 +129,6 @@
                 </ul>
             </div>
         </section>
-
-        <!--PASSWORDS SECTION-->
         <section id="passwords">
             <h2>Password Security</h2>
             <p>A password is a combination of characters and numbers.</p>
@@ -186,10 +175,11 @@
             <div class="content-box">
                 <h4>Method #1</h4>
                 <ul>
-                    <li><strong>Shoulder Surfing</strong> Looking over ones shoulder to identify their password.</li>
+                    <li><strong>Shoulder Surfing:</strong> Looking over ones shoulder to identify their password.</li>
                     <li><strong>Keylogging:</strong> Recording keystrokes to capture passwords.</li>
-
+                </ul>
                 <h4>Method #2</h4>
+                <ul>
                     <li><strong>Brute Force:</strong> Software programs that automate the process of rapidly testing all possible combinations of characters.</li>
                     <li><strong>Uneducated Users:</strong> Guessing the password based on knowledge of the user.</li>
                 </ul>
@@ -205,17 +195,14 @@
                     <li>Women usually tend to use their personal names.</li>
                     <li>Men usually tend to use their hobbies.</li>
                 </ul>
-            
-
+            </div>
         </section>
-
-        <!--PHISHING SECTION-->
         <section id="phishing">
             <h2>Phishing Attacks</h2>
             <p>Phishing is one of the most successful cyberattack methods, using deception to trick individuals into revealing sensitive information or installing malware.</p>
 
             <div class="image-placeholder">
-                <img src="Screenshot 2025-11-05 182232.png" alt="Phishing Email">
+                <img src="Email.png" alt="Phishing Email">
             </div>
             <p class="image-caption">Image Source: Cyberpilot.io</p>
 
@@ -231,6 +218,7 @@
             </div>
 
             <h3>Types of Phishing</h3>
+            <div class="grid-container">
                 <div class="grid-item">
                     <h4>Spear Phishing</h4>
                     <p>An email scam targeted towards a specific individual, organization, or business.</p>
@@ -252,28 +240,26 @@
             <h3>How to Identify Phishing</h3>
             <div class="content-box">
                 <ul>
-                    <li><span class="warning"></span> <strong>Urgent or threatening language:</strong> "Act now or lose everything!"</li>
-                    <li><span class="warning"></span> <strong>Generic greetings:</strong> "Dear Customer" instead of your name</li>
-                    <li><span class="warning"></span> <strong>Suspicious sender addresses:</strong> Slight misspellings or gramatical errors</li>
-                    <li><span class="warning"></span> <strong>Unexpected attachments:</strong> Especially .exe, .zip, or .scr files</li>
-                    <li><span class="warning"></span> <strong>Requests for sensitive information:</strong> Real companies will never ask for passwords via email</li>
-                    <li><span class="warning"></span> <strong>Mismatched URLs:</strong> Hover over links to see actual destination</li>
-                    <li><span class="warning"></span> <strong>Too good to be true offers:</strong> Prize winnings, or free gifts</li>
+                    <li><span class="warning">⚠️</span> <strong>Urgent or threatening language:</strong> "Act now or lose everything!"</li>
+                    <li><span class="warning">⚠️</span> <strong>Generic greetings:</strong> "Dear Customer" instead of your name</li>
+                    <li><span class="warning">⚠️</span> <strong>Suspicious sender addresses:</strong> Slight misspellings or grammatical errors</li>
+                    <li><span class="warning">⚠️</span> <strong>Unexpected attachments:</strong> Especially .exe, .zip, or .scr files</li>
+                    <li><span class="warning">⚠️</span> <strong>Requests for sensitive information:</strong> Real companies will never ask for passwords via email</li>
+                    <li><span class="warning">⚠️</span> <strong>Mismatched URLs:</strong> Hover over links to see actual destination</li>
+                    <li><span class="warning">⚠️</span> <strong>Too good to be true offers:</strong> Prize winnings, or free gifts</li>
                 </ul>
             </div>
 
             <h3>Protection Strategies</h3>
             <div class="content-box">
                 <ul>
-                    <li><span class="warning"></span> <strong>Verify before clicking:</strong> Contact the organization directly using official contact information</li>
-                    <li><span class="warning"></span> <strong>Examine URLs:</strong> Look for misspellings, extra characters, or wrong domains</li>
-                    <li><span class="warning"></span> <strong>Keep software updated:</strong> Browsers and security software can block known phishing sites</li>
-                    <li><span class="warning"></span> <strong>Report suspicious emails:</strong> Forward to IT department or report to the impersonated organization</li>
+                    <li><strong>Verify before clicking:</strong> Contact the organization directly using official contact information</li>
+                    <li><strong>Examine URLs:</strong> Look for misspellings, extra characters, or wrong domains</li>
+                    <li><strong>Keep software updated:</strong> Browsers and security software can block known phishing sites</li>
+                    <li><strong>Report suspicious emails:</strong> Forward to IT department or report to the impersonated organization</li>
                 </ul>
             </div>
         </section>
-
-        <!--SOCIAL ENGINEERING SECTION-->
         <section id="social-engineering">
             <h2>Social Engineering</h2>
             <p>Social engineering is psychological manipulation used on people to perform actions or collect confidential information. It exploits human psychology rather than technical vulnerabilities.</p>
@@ -284,7 +270,7 @@
             <p class="image-caption">Image Source: Hoxhunt.com</p>
 
             <h3>Common Social Engineering Tactics</h3>
-            
+            <div class="grid-container">
                 <div class="grid-item">
                     <h4>Baiting</h4>
                     <p>Offering something enticing to lure victims into a trap. Often uses physical media or download links.</p>
@@ -322,26 +308,22 @@
                 </div>
                 
                 <div class="grid-item">
-                    <h4>Ransomeware</h4>
+                    <h4>Ransomware</h4>
                     <p>Using fake or real messages to force users to take an action, like installing fake software or paying a ransom.</p>
                     <p><strong>Example:</strong> Someone claiming to be a teacher at school sends a link. You click it and accidentally download ransomware onto your computer.</p>
                 </div>
             </div>
         </section>
-
-        <!--THREATS SECTION-->
         <section id="threats">
             <h2>Common Cybersecurity Threats</h2>
             <p>Modern society faces a wide range of cybersecurity threats. Understanding these threats can help create effective defense strategies.</p>
 
             <div class="image-placeholder">
-                <img src="Screenshot 2025-11-05 191626.png" alt="Threats">
+                <img src="threats.png" alt="Threats">
             </div>
             <p class="image-caption">Image Source: Diro.io</p>
 
             <h3>Common Threats</h3>
-            <div class="content-box">
-
             <div class="grid-container">
                 <div class="grid-item">
                     <h4>Viruses</h4>
@@ -375,8 +357,146 @@
                 </div>
             </div>
         </section>
+        <section id="networking">
+            <h2>Networking</h2>
+            <p>Learning the key concepts of network are neccessary to understand cybersecurity to its fullest. </p>
 
-        <!--SOURCES SECTION-->
+            <h3>What is a Network?</h3>
+            <div class="content-box">
+                <p>A network is a group of 2 or more computers connected to one another, this gives the user access to the data, resources, and applications.</p>
+            </div>
+
+            <h3>Types of Networks</h3>
+            <div class="grid-container">
+                <div class="grid-item"> 
+                    <h4>LAN</h4>
+                    <p>LAN or Local Area Netowrk are devices connected inside a small geographic area for local sharing of resources.</p>
+                    <p><strong>Examples:</strong> Home Wifi</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>WAN</h4>
+                    <p>WAN or Wide Area Network are devices connected across a wide geographical area. Usually a collection of connected LANs.</p>
+                    <p><strong>Example:</strong> The internet</p>
+                </div>
+            </div>
+
+            <h3>Network Hardware</h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Hub</h4>
+                    <p>Sends messages to everybody. They just continue moving signals through without determining who the correct reciver is.</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Switch</h4>
+                    <p>Sends messages only to the destination device in the LAN using MAC addresses. Way smarter than hubs.</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Router</h4>
+                    <p>Connects different networks together. Called a "gateway" because it's the only device that can connect two networks.</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Wireless Access Point</h4>
+                    <p>A switch without wires. Allows wireless devices to connect to a wired network.</p>
+                </div>
+            </div>
+
+            <h3>Network Identifiers</h3>
+            <div class="content-box">
+                <h4>MAC Address</h4>
+                <p>MAC Address or Media Access Control Address is an unique identifier for each device. Represented by a 12 hexadecimal digits and is NOT changeable.</p>
+                <p><strong>Example:</strong> 2C:54:91:88:C9:E3</p>
+            </div>
+
+            <div class="content-box">
+                <h4>IP Address</h4>
+                <p>IP Address or Internet Protocol Address is a temporary identifier for each device on a network. Must be unique among connected devices on that network. IS changeable.</p>
+                <p><strong>IPv4 Example:</strong> 192.168.54.96</p>
+                <p><strong>IPv6 Example:</strong> 4353:bd7::4</p>
+            </div>
+
+            <h3>Important Protocols</h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>TCP or Transmission Control Protocol</h4>
+                    <p><strong>Connection oriented and reliable</strong></p>
+                    <p>Keeps track of lost packets and packet order. Uses the 3 way handshake to establish connections.</p>
+                    <p><strong>Used for:</strong> Web browsing, email, and file transfers</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>UDP or User Datagram Protocol</h4>
+                    <p><strong>Connectionless and fast</strong></p>
+                    <p>Doesn't track lost packets. Much faster than TCP but less reliable.</p>
+                    <p><strong>Used for:</strong> Online gaming, streaming, and DNS</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>HTTP/HTTPS</h4>
+                    <p><strong>Web communication protocols</strong></p>
+                    <p>HTTP  is unsecure and unencrypted we browsing</p>
+                    <p>HTTPS is encrypted and secure web browsing</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>DNS or Domain Name System</h4>
+                    <p><strong>Internet's phonebook</strong></p>
+                    <p>Translates human readable domain names into IP addresses.</p>
+                    <p><strong>Example:</strong> google.com is 142.250.190.14</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>DHCP or Dynamic Host Configuration Protocol</h4>
+                    <p><strong>IP assignment</strong></p>
+                    <p>Automatically assigns IP addresses, subnet masks, gateways, and DNS servers to devices on a network.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h4>ARP or Address Resolution Protocol</h4>
+                    <p><strong>MAC to IP mapping</strong></p>
+                    <p>Tool used by devices to find the MAC address associated with an IP address on the same network.</p>
+                </div>
+            </div>
+
+            <h3>Network Security Concepts</h3>
+            <div class="content-box">
+                <h4>Subnet Masks and Network Segmentation</h4>
+                <p>A subnet mask is a 32 bit value that separates network bits from host bits. This defines which devices are on the same network.</p>
+                <p><strong>Example:</strong></p>
+                <ul>
+                    <li>IP Address: 192.168.1.100</li>
+                    <li>Subnet Mask: 255.255.255.0</li>
+                </ul>
+            </div>
+
+            <div class="content-box">
+                <h4>Ports</h4>
+                <p>Ports are virtual openings that handle specific types of network traffic. Port numbers range from 0-65535.</p>
+                <p><strong>Common Ports:</strong></p>
+                <ul>
+                    <li>Port 80 is HTTP</li>
+                    <li>Port 443 is HTTPS</li>
+                </ul>
+            </div>
+
+            <h3>Network Analysis Tools</h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Wireshark</h4>
+                    <p>Network packet analyzer that captures and examines network traffic.</p>
+                    <p><strong>Uses:</strong> Security analysis and protocol learning</p>
+                </div>
+                
+                <div class="grid-item">
+                    <h4>Nmap</h4>
+                    <p>Network scanning tool that identifies live hosts, open ports, and running services.</p>
+                    <p><strong>Uses:</strong> Security and finding vulnerability</p>
+                </div>
+            </div>
+        </section>
         <section id="sources">
             <h2>Sources and Resources</h2>
 
